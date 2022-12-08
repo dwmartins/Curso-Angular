@@ -12,4 +12,5 @@ export class AppComponent implements OnInit{
       alert("Você aguardou 5 segundos :)")
     },5000)
   }
+  //ngOninit() faz tu que estiver dentro so vai carrgar assim que a pagina estiver carregada.
 }

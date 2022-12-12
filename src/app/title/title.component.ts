@@ -11,13 +11,7 @@ export class TitleComponent implements OnInit, OnChanges{
 
   constructor() {}
 
-  ngOnInit(): void {
-    
-  }
-  // ngOnInit() -> vai carrer o que estiver nela assim que carregar a pagina!
-
-  ngOnChanges( ): void {
-    alert("Foi alterado com sucesso.")
-  }
+  ngOnInit(): void {}
+  ngOnChanges( ): void {}
  
 }

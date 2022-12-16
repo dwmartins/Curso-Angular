@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template:`
-    <app-data-biding></app-data-biding>
+    <app-diretivas-estruturaris></app-diretivas-estruturaris>
     <router-outlet></router-outlet>
   `
 })

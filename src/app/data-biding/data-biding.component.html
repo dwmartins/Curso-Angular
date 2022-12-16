@@ -6,7 +6,7 @@
 <p>{{ idade > 23 }}</p>
 
 <hr>
-
+<!-- --------------------""------------------------->
 <h1>Property Binding</h1>
 <button [disabled]="checkedDisabled" >Button</button>
 <br>
@@ -14,7 +14,7 @@
 
 <br><br>
 <hr>
-
+<!-- --------------------""------------------------->
 <h2>Event Binding</h2>
 
 <button (click)="alertaInfo($event)">Evento</button>
@@ -26,3 +26,10 @@
     <p>Posição x = {{ position.x }}</p>
     <p>Ppsição y = {{ position.y }}</p>
 </div>
+<!-- --------------------""------------------------->
+<br><br>
+<hr>
+
+<h2>Two-way binding</h2>
+<input [(ngModel)]="nome">
+{{nome}}

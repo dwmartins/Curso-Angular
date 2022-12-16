@@ -9,5 +9,20 @@
 
 <h1>Property Binding</h1>
 <button [disabled]="checkedDisabled" >Button</button>
+<br>
+<img [src]="imgSrc" [title]="imgTitle" width="200px">
 
-<img [src]="imgSrc" [title]="imgTitle">
+<br><br>
+<hr>
+
+<h2>Event Binding</h2>
+
+<button (click)="alertaInfo($event)">Evento</button>
+
+<div (mousemove)="mouseMoveTeste($event)" style="background: red; width: 300px; height: 300px;">
+    <h1>Passe o mouse aqui!</h1>
+</div>
+<div>
+    <p>Posição x = {{ position.x }}</p>
+    <p>Ppsição y = {{ position.y }}</p>
+</div>

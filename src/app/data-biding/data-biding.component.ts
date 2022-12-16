@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-biding.component.scss']
 })
 export class DataBidingComponent implements OnInit {
+  public position: {x: number, y:number} = {x:0, y:0};
   
   public nome: string = "Douglas";
   public idade: number = 24;
@@ -17,5 +18,14 @@ export class DataBidingComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+  }
+
+  public alertaInfo(valor: MouseEvent) {
+    console.log(valor);
+  }
+
+  public mouseMoveTeste(valor: MouseEvent) {
+    this.position.x = valor.offsetX;
+    this.position.y = valor.offsetY;
   }
 }

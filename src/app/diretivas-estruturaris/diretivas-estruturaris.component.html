@@ -7,6 +7,8 @@
 
 <hr>
 <!-- ------------------------""---------------------------- -->
+<h3>NgIfm</h3>
+
 <p *ngIf="conditionClick" style="background-color: blue;">
     True
 </p>
@@ -16,3 +18,14 @@
 </p>
 
 <button (click)="onCLick()">Clicar</button>
+
+<!-- -------------------------""------------------------------- -->
+<hr>
+
+<h3>NgFor</h3>
+
+<ul>
+    <li *ngFor="let item of list" (click)="onClickEventList($event)"> {{item.nome}} - idade = {{item.idade}} </li>
+</ul> 
+
+<button (click)="onclickAdd()">add</button>

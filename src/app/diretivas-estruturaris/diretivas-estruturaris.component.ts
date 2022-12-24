@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumberValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-diretivas-estruturaris',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class DiretivasEstruturarisComponent implements OnInit {
   public condition: boolean = true;
   public conditionClick: boolean = true;
+  public list = [{nome: "Douglas Martins", idade: 24}]
 
   constructor() {}
   ngOnInit(): void {
@@ -26,5 +28,13 @@ export class DiretivasEstruturarisComponent implements OnInit {
     }else{
       this.conditionClick = true;
     }
+  }
+
+  public onclickAdd() {
+    this.list.push({nome: "Tati", idade: 27});
+  }
+
+  public onClickEventList(event: MouseEvent){
+    alert(event)
   }
 }
